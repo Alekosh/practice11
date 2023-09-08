@@ -1,0 +1,54 @@
+@import "./index"; // получаем все файлы
+
+html,
+body {
+	font-size: 10px;
+}
+body {
+	font-family: $ff-Roboto;
+	// background: #fff;
+}
+.container {
+	max-width: 1245px; //1215 + 30padding = 1245px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+h1 {
+	font-size: 7.2em;
+} //72px
+h2 {
+	font-size: 5.4em;
+} //54px
+h3 {
+	font-size: 3.6em;
+} //36px
+h4{
+	font-size: 2.2em;
+} //22px
+.hidden{
+	display: none;
+}
+a{
+	color: $black;
+}
+.trust {
+	padding: 77px 0;
+}
+.trust__title {
+	text-align: center;
+	font-size: 1.6em;
+	margin-bottom: 45px;
+}
+.trust__clients {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+}
+/* Start==================================Важная настройка==================================Start */
+body.lock {
+  overflow: hidden;
+}
