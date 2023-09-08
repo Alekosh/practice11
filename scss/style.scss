@@ -6,6 +6,7 @@ body {
 }
 body {
 	font-family: $ff-Roboto;
+	overflow-x: hidden; // swipper
 	// background: #fff;
 }
 .container {
@@ -27,6 +28,9 @@ h3 {
 	font-size: 3.6em;
 } //36px
 h4{
+	font-size: 2.4em;
+} //24px
+h5{
 	font-size: 2.2em;
 } //22px
 .hidden{
@@ -40,7 +44,7 @@ a{
 }
 .trust__title {
 	text-align: center;
-	font-size: 1.6em;
+	font-size: 1.6em; // h6
 	margin-bottom: 45px;
 }
 .trust__clients {

@@ -1,0 +1,62 @@
+.projects {
+  position: relative;
+  bottom: -200px;
+  h5{
+    color: $purple;
+    text-transform: uppercase;
+    font-weight: $fw-bold;
+    margin-bottom: 20px;
+  }
+}
+.project__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 70px;
+}
+// slide
+.slide__item--text {
+  padding: 33px;
+  background: $white;
+  h6{
+    color: $lapis;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    margin-bottom: 17px;
+  }
+  h4{
+    font-weight: $fw-bold;
+    font-size: 2.4em;
+    margin-bottom: 19px;
+  }
+  a{
+    display: flex;
+    align-items: center;
+    font-size: 1.8em;
+    line-height: 18px;
+  }
+}
+.swipper__btns{
+  display: flex;
+  gap: 7px;
+  justify-content: flex-end;
+  margin-top: 26px;
+  .swipper__prev, .swipper__next {
+    cursor: pointer;
+  }
+}
+.slide__item{
+  display: flex;
+  flex-direction: column;
+}
+// @media (max-width: 1250px) {
+//     .swiper, .swiper-wrapper {
+//       max-width: 780px;
+//     }
+//   }
+
+//   @media (max-width: 950px) {
+//     .swiper, .swiper-wrapper {
+//       max-width: 320px;
+//     }
+// }
