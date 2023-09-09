@@ -870,6 +870,90 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.2s ease-in-out;
 }
 
+.footer {
+  background-color: #000000;
+  padding: 178px 0 20px 0;
+}
+
+.footer__head {
+  font-weight: 700;
+  line-height: 59.4px;
+  /* 110% */
+  letter-spacing: 1px;
+  margin-bottom: 100px;
+}
+
+.footer__head h2 {
+  color: #FFFFFF;
+}
+
+.footer__head span {
+  color: #3C46FF;
+}
+
+.footer__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 125px;
+  gap: 30px;
+}
+
+.footer__text p {
+  color: #666666;
+  line-height: 28px;
+  /* 175% */
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.footer__text img {
+  margin-bottom: 14px;
+}
+
+.footer__mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  color: #666666;
+  line-height: 28px;
+  /* 175% */
+  font-size: 1.6em;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 485px;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.footer__link {
+  color: #FFFFFF;
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: 18px;
+  /* 100% */
+}
+
+.footer__copyrate {
+  color: #666666;
+  line-height: 22.4px;
+  /* 140% */
+  font-size: 1.6em;
+}
+
 @media (max-width: 1800px) {
   .swiper {
     overflow: hidden;
@@ -990,6 +1074,9 @@ h1, h2, h3, h4, h5, h6 {
     height: 45px;
     margin-bottom: 0;
   }
+  .footer {
+    padding: 100px 0 20px 0;
+  }
 }
 
 @media (max-width: 894px) {
@@ -1094,6 +1181,19 @@ h1, h2, h3, h4, h5, h6 {
   }
   .news__title h3 {
     font-size: 1.8em;
+  }
+  .footer__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 60px;
+  }
+  .footer {
+    padding: 60px 0 20px 0;
+  }
+  .footer__nav {
+    width: auto;
   }
 }
 

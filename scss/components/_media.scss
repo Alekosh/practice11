@@ -96,6 +96,9 @@
       margin-bottom: 0;
     }
   }
+  .footer{
+    padding: 100px 0 20px 0;
+  }
 }
 @media (max-width: 894px) {
   .testimonials__swiper{
@@ -196,5 +199,15 @@
     h3{
       font-size: 1.8em;
     }
+  }
+  .footer__body {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  .footer{
+    padding: 60px 0 20px 0;
+  }
+  .footer__nav{
+    width: auto;
   }
 }

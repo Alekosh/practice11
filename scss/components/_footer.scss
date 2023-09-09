@@ -1,61 +1,65 @@
 .footer {
-  padding-top: 114px;
-  padding-bottom: 123px;
-
-  display: flex;
-  flex-direction: column;
-}
-.footer__contact {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h2{
-    margin-bottom: 20px;
-  }
-  p{
-    font-size: 1.8em;
-    max-width: 275px;
-    margin-bottom: 30px;
-  }
-}
-.btn {
   background-color: $black;
-  color: $white;
-  padding: 13px 29px 12px 28px;
-  border-radius: 20px;
-  &:hover{
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    transition: .2s;
+  padding: 178px 0 20px 0;
+}
+.footer__head {
+  font-weight: 700;
+  line-height: 59.4px; /* 110% */
+  letter-spacing: 1px;
+  h2{
+    color: $white;
   }
+  span{
+    color: $lapis;
+  }
+  margin-bottom: 100px;
 }
-.social {
-  margin-top: 86px;
-  margin-bottom: 46px;
-}
-.social__list {
+.footer__body {
   display: flex;
   justify-content: space-between;
-  gap: 60px;
-}
-.social__item {
-  &:hover{
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    transition: .2s;
-  }
-}
-.social__link {
+  margin-bottom: 125px;
+  gap: 30px;
 }
 .footer__text {
-  color: #828282;
-  text-align: center;
-  font-size: 1.4em;
+  p{
+    color: $gray;
+    line-height: 28px; /* 175% */
+    font-size: 1.6em;
+    margin-bottom: 10px;
+  }
+  img{
+    margin-bottom: 14px;
+  }
+}
+.footer__mail {
+  display: flex;
+  gap: 8px;
+  color: $gray;
+  line-height: 28px; /* 175% */
+  font-size: 1.6em;
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 485px;
+}
+.footer__list {
+  
+}
+.footer__item {
+  &:not(:last-child){
+    margin-bottom: 40px;
+  }
+  
+}
+.footer__link {
+  color: $white;
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: 18px; /* 100% */
+}
+.footer__copyrate {
+  color: $gray;
+  line-height: 22.4px; /* 140% */
+  font-size: 1.6em;
 }
