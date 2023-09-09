@@ -4,6 +4,16 @@
     overflow:clip;
   }
 }
+@media (max-width: 1210px) {
+  .faq__list{
+    flex-direction: column;
+  }
+  .faq__title{
+    h2{
+      margin-bottom: 80px;
+    }
+  }
+}
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
 @media (max-width: 1200px) {
   .hero__inner{
@@ -14,6 +24,21 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .news__container{
+    gap: 25px;
+    justify-content: space-around;
+  }
+  .news__post{
+    width: 475px;
+  }
+  .news__left{
+    flex-basis: auto;
+  }
+  .testimonials__text {
+    h3{
+      font-size: 2.4em;
+    }
   }
 }
 // Большие девайсы (десктопы, >= 992px)
@@ -35,6 +60,49 @@
   .services__title h2{
     font-size: 6.4em;
     width: auto;
+  }
+  .designer__text{
+    h2{
+      font-size: 3.8em;
+    }
+    p{
+      font-size: 1.8em;
+      width: 400px;
+    }
+  }
+  .designer {
+    padding: 100px 0;
+  }
+  .news__post{
+    width: auto;
+  }
+  .news__desc{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .news__title{
+    margin-bottom: 50px;
+  }
+  .testimonials__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h3{
+      margin-bottom: 0;
+    }
+    img{
+      width: 45px;
+      height: 45px;
+      margin-bottom: 0;
+    }
+  }
+}
+@media (max-width: 894px) {
+  .testimonials__swiper{
+    .swiper-slide{
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 // Средние девайсы («таблетки», >= 768px)
@@ -71,6 +139,41 @@
       margin-bottom: 30px;
     }
   }
+  .designer__text{
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+    p{
+      width: auto;
+    }
+  }
+  .designer{
+    h5{
+      margin-bottom: 15px;
+    }
+  }
+  .designer {
+    padding: 70px 0;
+  }
+  .news__container{
+    flex-direction: column;
+  }
+  .news__title{
+    margin-bottom: 25px;
+  }
+  .news__title{
+    h3{
+      font-size: 2.8em;
+    }
+  }
+  .news {
+    padding: 40px 0;
+  }
+  .testimonials__text{
+    width: auto;
+    height: auto;
+    gap: 30px;
+  }
 }
 // Малые девайсы («ландшафтные телефоны», >= 576px)
 @media (max-width: 576px) { 
@@ -82,6 +185,16 @@
     flex-direction: column;
     h2{
       margin-bottom: 15px;
+    }
+  }
+  .news__text{
+    h4{
+      font-size: 1.8em;
+    }
+  }
+  .news__title{
+    h3{
+      font-size: 1.8em;
     }
   }
 }

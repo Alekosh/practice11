@@ -87,7 +87,7 @@ if (iconMenu) {
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  //loop: true, // true - круговой слайдер, false - слайдер с конечными положениями
+  // loop: true, // true - круговой слайдер, false - слайдер с конечными положениями
   // speed: 500,
   // effect: 'slider', // cards, coverflow, flip, fade, cube
   // initialSlide: 1, // Начинаем со 2 слайдера
@@ -150,12 +150,73 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-const swiperPrev = document.querySelector('.swiperPrev');
-const swiperNext = document.querySelector('.swiperNext');
+// const swiperPrev = document.querySelector('.swiperPrev');
+// const swiperNext = document.querySelector('.swiperNext');
 
-swiperPrev.addEventListener('click', () => {
-  swiper.slidePrev();
-})
-swiperNext.addEventListener('click', () => {
-  swiper.slideNext();
-})
+// swiperPrev.addEventListener('click', () => {
+//   swiper.slidePrev();
+// })
+// swiperNext.addEventListener('click', () => {
+//   swiper.slideNext();
+// })
+// ==============================================================
+const testimonialSwiper = new Swiper('.testimonials__swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true, // true - круговой слайдер, false - слайдер с конечными положениями
+  // speed: 500,
+  // effect: 'slider', // cards, coverflow, flip, fade, cube
+  // initialSlide: 1, // Начинаем со 2 слайдера
+  // freeMode: true, // Можно перетаскивать как ленту
+  slidesPerView: 1, // кол-во активных слайдов 1 || 2 || 3 || 1.5 || "auto"
+  centeredSlider: true, // центрирование слайдер
+  spaceBetween: 24, // расстояние между слайдами
+  // slidesPerGroup: 3, // кол-во пролистываемых слайдов
+
+  // пагинация в виде точек
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   clickable: true, // true - пагинация становится кликабельной
+  // },
+
+  // кнопки вперед и назад
+  navigation: {
+    prevEl: '.swipper__prev',
+    nextEl: '.swipper__next',
+  },
+
+  // And if we need scrollbar
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
+
+  // Автовоспроизведение
+  // autoplay: {
+  //   delay: 1000,
+  // },
+
+});
+
+// const swiperPrev = document.querySelector('.swiperPrev');
+// const swiperNext = document.querySelector('.swiperNext');
+
+// =====================================================
+const accordionBtns = document.querySelectorAll(".faq__accardion--head");
+
+accordionBtns.forEach((accordion) => {
+  accordion.onclick = function () {
+    this.classList.toggle("active");
+
+    let content = this.nextElementSibling;
+    console.log(content);
+
+    if (content.style.maxHeight) {
+      //this is if the accordion is open
+      content.style.maxHeight = null;
+    } else {
+      //if the accordion is currently closed
+      content.style.maxHeight = content.scrollHeight + "px";
+      console.log(content.style.maxHeight);
+    }
+  };
+});
